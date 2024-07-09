@@ -7,40 +7,14 @@ This project is part of the 42 School curriculum. It aims to deepen your underst
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Project Structure](#project-structure)
-3. [Mandatory Requirements](#mandatory-requirements)
-4. [Bonus Requirements](#bonus-requirements)
-5. [Setup and Installation](#setup-and-installation)
-6. [Usage](#usage)
-7. [Conclusion](#conclusion)
+2. [Mandatory Requirements](#mandatory-requirements)
+3. [Setup and Installation](#setup-and-installation)
+4. [Usage](#usage)
+5. [Conclusion](#conclusion)
 
 ## Introduction
 
 The Inception project broadens your knowledge of system administration by utilizing Docker to virtualize several services. The project involves setting up an infrastructure composed of different services, each running in a dedicated Docker container within a virtual machine.
-
-## Project Structure
-
-inception/
-|-- Makefile
-|-- srcs/
-|-- docker-compose.yml
-|-- .env
-|-- requirements/
-|-- mariadb/
-|-- conf/
-|-- Dockerfile
-|-- .dockerignore
-|-- nginx/
-|-- conf/
-|-- Dockerfile
-|-- .dockerignore
-|-- wordpress/
-|-- conf/
-|-- Dockerfile
-|-- .dockerignore
-
-markdown
-Copy code
 
 ## Mandatory Requirements
 
@@ -60,14 +34,6 @@ Copy code
     - Use environment variables stored in a `.env` file.
     - NGINX container must be the only entrypoint via port 443 using TLSv1.2/1.3.
 
-## Bonus Requirements
-
-1. Set up Redis cache for your WordPress website.
-2. Set up an FTP server container pointing to the volume of your WordPress website.
-3. Create a simple static website using a language other than PHP.
-4. Set up Adminer.
-5. Set up an additional service of your choice and justify its usefulness during the defense.
-
 ## Setup and Installation
 
 ### Prerequisites
@@ -80,17 +46,17 @@ Copy code
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/inception.git
+    git clone https://github.com/mohamedhabiballah1/inception.git
     cd inception
     ```
 
 2. Configure environment variables:
     - Create a `.env` file in the `srcs` directory:
         ```env
-        DOMAIN_NAME=yourlogin.42.fr
-        MYSQL_ROOT_PASSWORD=your_root_password
-        MYSQL_USER=your_mysql_user
-        MYSQL_PASSWORD=your_mysql_password
+        DOMAIN_NAME=mhabib-a.42.fr
+        MYSQL_ROOT_PASSWORD=1234
+        MYSQL_USER=mhabib-a
+        MYSQL_PASSWORD=1234
         ```
 
 3. Build and start the containers:
